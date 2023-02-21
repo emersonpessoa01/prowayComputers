@@ -54,6 +54,7 @@
 }
 .main-header__menu a:hover {
     background: var(--blue);
+    color: #fff;
 }
 /* form */
 .search-form {
