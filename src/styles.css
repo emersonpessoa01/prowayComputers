@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+:root{
+    --orange: #ff7000;
+    --blue: #004a76;
+    --dark-blue:#002d47;
+    --gray: rgba(88,89,91.1);
+    --light-gray-1:rgba(232, 232, 232, 1);
+    --light-gray-2: rgba(247,247,247)
+}
