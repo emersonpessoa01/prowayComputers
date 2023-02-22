@@ -1,0 +1,44 @@
+.footer {
+    background: var(--light-gray-1);
+    color: var(--gray);
+    font-size: 1.125rem;
+}
+.footer .footer__container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    padding: 1.25rem;
+}
+
+/* ul */
+
+.footer ul li {
+    display: block;
+    margin:10px 0;
+}
+.footer i{
+    color: var(--orange);
+}
+
+/* title */
+.footer .footer__container .footer__title {
+    font-size: 1.375rem;
+    font-weight: bold;
+    color: var(--blue);
+    margin-bottom: 5px;
+}
+
+/* parágrafo */
+.footer .footer__container .footer__about-text {
+    width: 400px;
+}
+
+/* seção copyright */
+.footer .footer__copyright {
+    text-align: center;
+    margin-top: 20px;
+    background: var(--light-gray-2);
+    font-weight: bold;
+    padding: 20px;
+    color: var(--gray);
+}
