@@ -1,108 +1,139 @@
-section {
-    padding: 2rem 7%;
+.container {
+    /* width:100%; */
+    /* height: 100vh; */
+    /* padding: 2rem 4%; */
+    /* box-sizing: border-box; */
+    padding-right: 18px;
 }
-.main-header {
+.navbar {
+    /* background: #ccc; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* height: 12%; */
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    column-gap: 40px;
-    padding: 10px 0;
+    flex-flow: wrap;
+    row-gap: 20px;
+    /* flex: 1; */
+    /* flex-direction: column; */
+    /* align-items: right; */
+    justify-content: space-between;
+    padding: 1rem 4%;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); */
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+        15px 15px 15px rgba(0, 0, 0, 0.1),
+        inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+        inset 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
+
 /* title */
 .main-header__title {
-    /* font-size: 80px; */
     letter-spacing: -1.5px;
-    height: auto;
-    display: block;
 }
-.main-header__title--blue {
+.main-header__title .main-header__title--blue {
     color: var(--blue);
     font-size: clamp(2rem, 4vw, 4rem);
 }
-.main-header__title--orange {
+.main-header__title .main-header__title--orange {
     color: var(--orange);
     font-size: clamp(2rem, 4vw, 4rem);
 }
-/* fim  */
-
-/* container */
-.container-menu {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    flex: 1;
+/* fim */
+nav {
+    /* flex: 1; */
+    /* text-align: right; */
 }
-
-/* ul */
-.main-header__menu {
-    max-width: 100%;
-    min-height: 100%;
-}
-.main-header__menu ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-}
-.main-header__menu ul li {
+nav ul li {
+    /* list-style: none; */
     display: inline-block;
-    /* float: left; */
+    /* margin-left: 24px; */
+    margin-bottom: 10px;
+
 }
-/* .main-header__menu ul li{
-    display: block;
-} */
-.badge-carrinho {
+nav ul li a .badge-carrinho {
     background: var(--dark-blue);
     padding: 0 5px;
     border-radius: 4px;
     color: white;
 }
-
-/* fim */
-/* links */
-.main-header__menu a {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    /* font-size: 22px; */
+nav :is(a) {
     font-weight: 400;
     padding: 10px;
     color: var(--gray);
     transition: all 0.3s ease-in-out;
     font-size: clamp(1rem, 2vw, 1.5rem);
-
+    display: block;
 }
-.main-header__menu .link-car i,
+nav :is(a):hover {
+    background: var(--blue);
+    color: #fff;
+}
+.main-header__title .link-card i,
 span {
     margin: 0 10px;
 }
 
-.main-header__menu a:hover {
-    background: var(--blue);
-    color: #fff;
-}
-/* form */
+/* form*/
 .search-form {
-    height: 56px;
     display: flex;
+    /* justify-content: flex-end; */
+    max-width: 100%;
+    height: auto;
 }
 .search-form input {
     box-sizing: border-box;
-    /* height: 56px; */
-    padding: 28px;
-    flex: 1;
+    padding: 0 1.75rem;
+    flex: 1 1 auto;
     background: var(--light-gray-1);
+    font-size: #9c9c9c;
     border: none;
     transition: all -3s ease-in-out;
-    font-size: 22px;
-    width: 100%;
+    font-size: 1.75rem;
+    width: 50%;
+    height: 3.5rem;
+
 }
 .search-form button {
-    width: 56px;
-    height: 56px;
+    display: block;
+    width: 3.5rem;
+    height: auto;
     background: var(--blue);
     border: none;
-    font-style: 22px;
+    font-size: 1.375rem;
     color: #fff;
 }
-/* fim */
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    h1,
+    ul {
+        text-align: center;
+    }
+    ul {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .search-form input {
+        padding: 0 1rem;
+        background: var(--light-gray-1);
+        border: none;
+        transition: all -3s ease-in-out;
+        font-size: 1.75rem;
+        width: 50%;
+    }
+    .search-form button {
+        width: 3.5rem;
+        height: auto;
+        background: var(--blue);
+        border: none;
+        font-size: 1.375rem;
+        color: #fff;
+    }
+}
