@@ -2,12 +2,13 @@
     background: var(--light-gray-1);
     color: var(--gray);
     font-size: 1.125rem;
+    padding-top: 80px;
 }
 .footer .footer__container {
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
-    padding: 1.25rem;
+    padding: 3.45rem;
 }
 
 /* ul */
