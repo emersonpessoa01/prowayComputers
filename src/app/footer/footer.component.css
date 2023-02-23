@@ -1,45 +1,50 @@
-.footer {
+.about{
     background: var(--light-gray-1);
     color: var(--gray);
     font-size: 1.125rem;
     padding-top: 80px;
 }
-.footer .footer__container {
+.about .row {
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    flex-flow: row wrap;
-    padding: 3.45rem;
+    flex-flow: wrap;
+    max-width: 100%;
 }
 
-/* ul */
 
-.footer ul li {
+.about .row .content {
+    flex: 1 1 20rem;
+    padding: 2rem;
+}
+.content ul li{
     display: block;
-    margin:10px 0;
 }
-.footer i{
+.content i{
     color: var(--orange);
+    
 }
-
-/* title */
-.footer .footer__container .footer__title {
+.about .row .content .footer__title{
     font-size: 1.375rem;
     font-weight: bold;
     color: var(--blue);
     margin-bottom: 5px;
 }
-
-/* parágrafo */
-.footer .footer__container .footer__about-text {
-    width: 400px;
-}
-
 /* seção copyright */
-.footer .footer__copyright {
+.footer__copyright {
     text-align: center;
     margin-top: 20px;
-    background: var(--light-gray-2);
+    background: var(--light-gray-1);
     font-weight: bold;
-    padding: 20px;
+    padding: 40px 0;
     color: var(--gray);
+    width: 100%;
+    margin-top:90px;
 }
+@media(max-width:780px){
+    .about{
+        padding-top: 150px;
+
+    }
+}
+/* FIM */
