@@ -12,7 +12,7 @@
     justify-content: space-evenly;
     flex-flow: wrap;
     max-width: 100%;
-    min-height: 60vh;
+    /* min-height: 60vh; */
 
 }
 
@@ -43,7 +43,7 @@
     padding: 40px 0;
     color: var(--gray);
     width: 100%;
-    min-height: 30vh;
+    /* min-height: 30vh; */
 }
 @media (max-width: 780px) {
     .about {
