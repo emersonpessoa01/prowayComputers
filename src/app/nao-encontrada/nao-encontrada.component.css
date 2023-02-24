@@ -37,13 +37,21 @@
         text-align: center;
     }
     .container img{
-        width:25vw;
+        width:40vw;
         height: auto;
     }
 }
-@media(max-width:775px){
+@media(max-width:780px){
     .container{
-        padding: 60px 7% 0;
+        padding: 80px 7% 0;
+    }
+    .container h2{
+        width: 100%;
+    }
+}
+@media(max-width:415px){
+    .container{
+        padding: 100px 7% 0;
     }
     .container h2{
         width: 100%;
