@@ -1,5 +1,5 @@
 <section class="product-list">
-    <div class="product-list__card">
+    <div class="product-list__card" *ngFor="let produto of produtos">
         <a class="product-list__link">
             <img src="" alt="imagens dos produtos" />
             <h2 class="product-item__name">Produto 01</h2>
@@ -9,3 +9,4 @@
         </a>
     </div>
 </section>
+
