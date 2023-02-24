@@ -45,6 +45,7 @@ nav :is(a) {
     color: var(--gray);
     transition: all 0.3s ease-in-out;
     font-size: clamp(1rem, 2vw, 1.5rem);
+    cursor: pointer;
 }
 
 nav :is(a):hover {
@@ -89,6 +90,7 @@ span {
     border: none;
     color: #fff;
     font-size: 1.375rem;
+    cursor: pointer;
 }
 @media (max-width: 768px) {
     .navbar {

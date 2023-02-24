@@ -1,3 +1,4 @@
+import { NaoEncontradaComponent } from "./nao-encontrada/nao-encontrada.component";
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
@@ -8,6 +9,7 @@ const routes: Routes = [
             import("./produtos/produtos.module").then((m) => m.ProdutosModule),
     },
     { path: "", redirectTo: "produtos", pathMatch: "full" },
+    { path: "**", component: NaoEncontradaComponent },
 ];
 
 @NgModule({
