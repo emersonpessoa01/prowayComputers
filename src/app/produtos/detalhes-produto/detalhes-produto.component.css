@@ -34,13 +34,15 @@ section .product__container {
 }
 .product__name {
     /* font-size: 36px; */
-    font-size: 3rem;
+    /* font-size: 3rem; */
+    font-size: clamp(2rem, 4vw, 4rem);
     color: var(--blue);
 }
 
 .product__price {
     /* font-size: 28px; */
-    font-size: 1.75rem;
+    /* font-size: 1.75rem; */
+    font-size: clamp(1.5rem, 4vw, 1.75rem);
     font-weight: 400;
     margin: 20px 0 20px;
     color: var(--orange);
@@ -82,6 +84,28 @@ input[type="number"] {
     /* -moz-appearance: textfield; */
 }
 
+button {
+    /* background-color: var(--blue);
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 6px 12px; */
+
+    padding: 10px;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    transition: 0.3s all;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
 
 
 @media(max-width:768px){

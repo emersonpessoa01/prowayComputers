@@ -92,6 +92,9 @@ span {
     font-size: 1.375rem;
     cursor: pointer;
 }
+.search-form button:hover{
+    background: var(--dark-blue);
+}
 @media (max-width: 768px) {
     .navbar {
         display: flex;
