@@ -103,7 +103,7 @@ button:hover {
         padding-top:120px;
     }
 }
-@media(max-width:450px){
+@media(max-width:500px){
     section{
         padding-top:150px;
     }
