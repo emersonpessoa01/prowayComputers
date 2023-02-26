@@ -43,21 +43,20 @@ section .product__container {
     font-size: 1.75rem;
     font-weight: 400;
     margin: 20px 0 20px;
-    color: var(--gray);
+    color: var(--orange);
 
 }
 
 /* parágrafos */
 .product-description__container p {
     font-size: 1.2rem;
-    color: var(--blue);
     line-height: 1.8;
     color: var(--gray);
 
 }
 
 .product__avaiability {
-    font-size: 1rem !important;
+    font-size: 1rem;
 }
 
 label {
@@ -69,6 +68,7 @@ label {
 input {
     width: 30px;
     padding: 5px;
+    color: var(--blue);
 }
 
 input::-webkit-outer-spin-button,
@@ -98,7 +98,15 @@ button:hover {
     filter: brightness(1.4);
 }
 
+@media(max-width:768px){
+    section{
+        padding-top:120px;
+    }
+}
 @media(max-width:450px){
+    section{
+        padding-top:150px;
+    }
     button{
         width: 100%;
     }
