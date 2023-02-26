@@ -99,8 +99,8 @@
 }
 
 .product-item__buy-button:hover {
-    /* filter: brightness(1.2);
-    cursor: pointer; */
+    filter: brightness(1.2);
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
