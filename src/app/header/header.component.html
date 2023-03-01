@@ -14,7 +14,9 @@
                         <a class="link-car" routerLink="carrinho">
                             <i class="fa-solid fa-cart-shopping"></i>
                             Carrinho
-                            <span class="badge-carrinho">0</span>
+                            <span class="badge-carrinho">{{
+                                carrinhoService.obterCarrinho().length
+                            }}</span>
                         </a>
                     </li>
                     <!-- <li><a routerLink="contato">Contato</a></li> -->
