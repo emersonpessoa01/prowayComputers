@@ -9,6 +9,11 @@ const routes: Routes = [
             import("./produtos/produtos.module").then((m) => m.ProdutosModule),
     },
     { path: "", redirectTo: "produtos", pathMatch: "full" },
+    {
+        path: "carrinho",
+        loadChildren: () =>
+            import("./carrinho/carrinho.module").then((m) => m.CarrinhoModule),
+    },
     { path: "**", component: NaoEncontradaComponent },
 ];
 
