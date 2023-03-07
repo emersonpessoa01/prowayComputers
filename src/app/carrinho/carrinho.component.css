@@ -1,3 +1,7 @@
+section {
+    padding: 80px 3%;
+}
+
 .cart-title {
     font-size: 44px;
     color: var(--gray);
@@ -6,7 +10,9 @@
 }
 
 li {
+    
     display: flex;
+    flex-wrap: wrap;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 8px;
     overflow: hidden;
@@ -15,6 +21,7 @@ li {
     align-items: center;
     justify-content: space-between;
 }
+
 
 img {
     width: 100px;
@@ -28,7 +35,7 @@ img {
     color: white;
     padding: 20px;
     height: 100%;
-    transition: .2s all;
+    transition: 0.2s all;
 }
 
 .remove-button:hover {
@@ -39,7 +46,7 @@ img {
     font-size: 24px;
     color: var(--gray);
     font-weight: 700;
-    padding: 8px 0;
+    padding: 8px;
 }
 
 input {
@@ -51,12 +58,27 @@ input {
     background-color: var(--blue);
     border: none;
     color: white;
-    padding: 10px;
+    padding: 10px 30px;
     font-size: 22px;
     margin-bottom: 10px;
-    transition: .3s all;
+    transition: 0.3s all;
 }
 
 .buy-button:hover {
     filter: brightness(0.9);
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 180px 4% 40px;
+    }
+}
+@media (max-width: 650px) {
+    li {
+        display: flex;
+        flex-direction: column;
+    }
+    .buy-button{
+        width: 100%;
+    }
 }
