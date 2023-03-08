@@ -8,7 +8,13 @@ section {
     max-width: 100%;
     margin: 0 auto;
 }
-@media (min-width: 769px) {
+@media (min-width: 800px) {
+    body {
+        background-color: #f1f2f3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .box {
         display: flex;
         align-items: center;
@@ -26,7 +32,7 @@ section {
         justify-content: center;
         gap: 2rem;
     }
-    .text p{
+    .text p {
         font-size: 1.2rem;
     }
 
@@ -43,13 +49,12 @@ section {
         height: 100%;
         transition: 0.2s all;
         cursor: pointer;
-        
     }
 
     .remove-button:hover {
         filter: brightness(0.9);
     }
-    .remove-button i{
+    .remove-button i {
         width: 30px;
         height: 30px;
         display: flex;
@@ -86,25 +91,26 @@ section {
         cursor: pointer;
     }
     .buy-button:hover {
-        filter:brightness(1.3);
+        filter: brightness(1.3);
     }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 800px) {
     section {
-        padding: 180px 4% 40px;
+        padding: 100px 4% 40px;
     }
 
     .grid {
         width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        /* justify-content: center; */
+        /* flex-direction: column; */
+        /* justify-content: space-evenly; */
+        justify-content: center;
         flex-wrap: wrap;
         /* margin: 0 auto; */
         gap: 10px;
     }
+
     .grid > .box {
         background: #eee5e9;
         border: none;
@@ -117,8 +123,8 @@ section {
         overflow: hidden;
         margin: 0 auto;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
     }
+
     p {
         color: var(--gray);
         font-size: 1rem;
@@ -187,10 +193,10 @@ section {
         justify-content: center;
     }
     .remove-button:hover {
-        filter: brightness(.7);
+        filter: brightness(0.7);
     }
-    
-    .remove-button i{
+
+    .remove-button i {
         width: 30px;
         height: 30px;
         display: flex;
@@ -216,6 +222,7 @@ section {
         width: 50px;
         text-align: center;
     }
+
     .buy-button {
         background-color: var(--blue) !important;
         border: none;
@@ -226,30 +233,120 @@ section {
         transition: 0.3s all;
     }
 }
-
-
-
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     section {
-        padding: 180px 4% 40px;
+        padding: 100px 4% 40px;
     }
 
     .grid {
         width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        /* justify-content: center; */
+        /* flex-direction: column; */
+        /* justify-content: space-evenly; */
+        justify-content: center;
         flex-wrap: wrap;
         /* margin: 0 auto; */
         gap: 10px;
     }
+
     .grid > .box {
         background: #eee5e9;
         border: none;
-        border-radius: .4rem;
+        border-radius: 0.4rem;
         text-align: center;
-        filter: brightness(.7);
+        /* flex:1 1 350px; */
+        width: 350px;
+        height: auto;
+        transition: transform 0.3s;
+        overflow: hidden;
+        margin: 0 auto;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    p {
+        color: var(--gray);
+        font-size: 1rem;
+    }
+    p > input {
+        display: block;
+        width: 30%;
+        padding: 0 10px;
+        margin: 10px auto;
+
+        outline: none;
+        border: 1px solid #9c9c9c;
+        border-radius: 0.2rem;
+    }
+    .box-text {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        width: 350px;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .box-text > .cart-total {
+        text-align: left;
+        font-size: 1.5rem;
+        color: var(--gray);
+        font-weight: 700;
+        padding: 8px;
+    }
+    .grid > .box:hover {
+        /* transform: translateY(5px); */
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .grid > .box img {
+        width: 100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    .text {
+        padding: 10px 20px 0;
+    }
+    .text h3 {
+        text-transform: uppercase;
+    }
+    .text p {
+        display: block;
+    }
+
+    .remove-button {
+        background: #d12761;
+        border: none;
+        color: white;
+        padding: 20px;
+        width: 100%;
+        transition: 0.2s all;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .remove-button:hover {
+        filter: brightness(0.7);
+    }
+
+    .remove-button i {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .remove-button:hover i {
+        border: 1.5px solid #fff;
+        border-radius: 50%;
+    }
+    .remove-button :hover {
+        filter: brightness(0.9);
     }
 
     .cart-total {
@@ -263,6 +360,7 @@ section {
         width: 50px;
         text-align: center;
     }
+
     .buy-button {
         background-color: var(--blue) !important;
         border: none;
@@ -274,60 +372,12 @@ section {
     }
 }
 
-
-
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     section {
         padding: 180px 4% 40px;
     }
-
-    .grid {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        /* justify-content: center; */
-        flex-wrap: wrap;
-        /* margin: 0 auto; */
-        gap: 10px;
-    }
-    .grid > .box {
-        background: #eee5e9;
-        border: none;
-        border-radius: .4rem;
-        text-align: center;
-        filter: brightness(1.3);
-    }
-
-    .buy-button {
-        background-color: var(--blue) !important;
-        border: none;
-        color: white;
-        padding: 10px 30px;
-        width: 100%;
-        font-size: 22px;
-        margin-bottom: 10px;
-        transition: 0.3s all;
-        border-radius: 0.4rem;
-        cursor: pointer;
-
-    }
-    .buy-button:hover {
-        filter: brightness(1.3);
-    }
-    /* button {
-        background: #d12761;
-        border: none;
-        color: #fff;
-        padding: 20px;
-        width: 100%;
-        font-weight: 600;
-        cursor: pointer;
-        display: block;
-    } */
-
-    /* Card (div filho)*/
 }
+
 @media (max-width: 450px) {
     li {
         display: flex;
