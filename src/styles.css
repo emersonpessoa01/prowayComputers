@@ -25,27 +25,32 @@ html {
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
-  }
-  
-  html::-webkit-scrollbar {
-    width: 0.8rem;
-  }
-  
-  html::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  html::-webkit-scrollbar-thumb {
-      background: var(--blue);
-      border-radius: 5rem;
-    }
-    html::-webkit-scrollbar-thumb:hover{
-      background: var(--dark-blue);
+}
 
-  }
-section{
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 5rem;
+}
+html::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue);
+}
+section {
     padding: 2rem 7%;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
