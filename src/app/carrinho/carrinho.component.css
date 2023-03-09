@@ -8,7 +8,7 @@ section {
     max-width: 100%;
     margin: 0 auto;
 }
-@media (min-width: 800px) {
+@media (min-width: 780px) {
     .box {
         display: flex;
         align-items: center;
@@ -89,7 +89,7 @@ section {
     }
 }
 
-/*  */
+
 @media (max-width: 780px) {
     section {
         padding: 100px 4% 40px;
