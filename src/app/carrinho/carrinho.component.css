@@ -156,7 +156,7 @@ section {
     }
 
     .grid > .box {
-        background: #eee5e9;
+        /* background: #eee5e9; */
         border: none;
         border-radius: 0.4rem;
         text-align: center;
