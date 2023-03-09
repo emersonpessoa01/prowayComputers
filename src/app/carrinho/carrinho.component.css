@@ -161,12 +161,13 @@ section {
         border-radius: 0.4rem;
         text-align: center;
         /* flex:1 1 350px; */
-        width: 350px;
+        width: 250px;
         height: auto;
         transition: transform 0.3s;
         overflow: hidden;
         margin: 0 auto;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-bottom: 1rem;
     }
 
     p {
